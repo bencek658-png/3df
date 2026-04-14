@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D.f Laser Tech – Lézerhegesztés és fémmegmunkálás</title>
+<meta name="description" content="Gyors segítség a szerszám gyártásban. Forma lézerhegesztés felsőfokon. 3D.f Laser Tech Kft. – Budapest.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <img src="logo.png" alt="3D.f Laser Tech" class="loader-logo">
+  <div class="loader-status" id="loaderStatus">Rendszer betöltése...</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="logo.png" alt="3D.f Laser Tech" class="nav-logo">
+    <span class="nav-brandname">3D.f <em>Laser</em> Tech</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Kezdőlap</a></li>
+    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+    <li><a href="palyazatok.html">Pályázatok</a></li>
+    <li><a href="kapcsolat.html" class="nav-cta">Kapcsolat</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" id="hbg">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html" onclick="closeMenu()">Kezdőlap</a>
+  <a href="szolgaltatasok.html" onclick="closeMenu()">Szolgáltatások</a>
+  <a href="palyazatok.html" onclick="closeMenu()">Pályázatok</a>
+  <a href="kapcsolat.html" onclick="closeMenu()">Kapcsolat</a>
+</div>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  <div class="urgency-track">
+    <span>Lézerhegesztés felsőfokon</span>
+    <span>Forma lézerhegesztés</span>
+    <span>Szerszámacél · Alumínium · Titán · Bronz</span>
+    <span>63 HRC keménységig</span>
+    <span>Magyar gyártó · Gyors átfutás</span>
+    <span>Orvosi műszerek javítása</span>
+    <span>Hősokk nélküli technológia</span>
+    <span>Lézerhegesztés felsőfokon</span>
+    <span>Forma lézerhegesztés</span>
+    <span>Szerszámacél · Alumínium · Titán · Bronz</span>
+    <span>63 HRC keménységig</span>
+    <span>Magyar gyártó · Gyors átfutás</span>
+    <span>Orvosi műszerek javítása</span>
+    <span>Hősokk nélküli technológia</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="kezdolap">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span class="pulse"></span>
+      3D.f Laser Tech Kft. – Budapest
+    </div>
+    <h1>
+      Gyors segítség a
+      <span class="h1-line2">szerszám gyártásban.</span>
+    </h1>
+    <p class="hero-quote">„Forma lézerhegesztés felsőfokon"</p>
+    <p class="hero-sub">
+      Lézertechnológiával felhegesztünk <strong>minden fémtípust</strong> hősokk nélkül. Fogaskerekektől orvosi műszerekig – <strong>precízen, gyorsan, garanciával.</strong>
+    </p>
+    <div class="btn-row">
+      <a href="kapcsolat.html" class="btn-primary">Kapcsolatfelvétel →</a>
+      <a href="szolgaltatasok.html" class="btn-outline">Szolgáltatások</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num" data-count="63">0</div>
+        <div class="stat-label">max. keménység (HRC)</div>
+      </div>
+      <div>
+        <div class="stat-num" data-count="0">–</div>
+        <div class="stat-label">hősokk</div>
+      </div>
+      <div>
+        <div class="stat-num">6+</div>
+        <div class="stat-label">anyagtípus</div>
+      </div>
+      <div>
+        <div class="stat-num">15+</div>
+        <div class="stat-label">éves tapasztalat</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-graphic">
+      <model-viewer 
+        src="model.glb" 
+        alt="3D Lézer gép modell" 
+        auto-rotate 
+        camera-controls 
+        shadow-intensity="1" 
+        environment-image="neutral"
+        class="hero-3d-model">
+      </model-viewer>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Javítanád a szerszámodat?<br><span>Hívj fel vagy írj most.</span></h2>
+  <a href="kapcsolat.html" class="btn-dark">Kapcsolatfelvétel →</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">3D.f <em>Laser</em> Tech</div>
+      <p class="footer-tagline">Gyors segítség a szerszám gyártásban. Forma lézerhegesztés felsőfokon.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Menü</h5>
+      <a href="index.html">Kezdőlap</a>
+      <a href="szolgaltatasok.html">Szolgáltatások</a>
+      <a href="palyazatok.html">Pályázatok</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+    </div>
+    <div class="footer-col">
+      <h5>Elérhetőség</h5>
+      <a href="tel:+36309587784">+36 30 958 7784</a>
+      <a href="mailto:info@3dflasertech.hu">info@3dflasertech.hu</a>
+      <a href="gyik.html">GYIK</a>
+      <a href="palyazatok.html">Pályázatok</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 3D.f Laser Tech Kft. – Minden jog fenntartva.</span>
+    <span>Adószám: 28831512-2-05 · Cégjegyzék: 05-09-033426</span>
+  </div>
+</footer>
+
+<a href="#kezdolap" class="scroll-top" id="scrollTop">↑</a>
+
+<script src="main.js"></script>
+</body>
+</html>

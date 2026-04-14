@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapcsolat – 3D.f Laser Tech</title>
+<meta name="description" content="Vedd fel velünk a kapcsolatot! Telefon, email, kapcsolatfelvételi űrlap. 3D.f Laser Tech Kft. – Budapest.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="logo.png" alt="3D.f Laser Tech" class="nav-logo">
+    <span class="nav-brandname">3D.f <em>Laser</em> Tech</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Kezdőlap</a></li>
+    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+    <li><a href="palyazatok.html">Pályázatok</a></li>
+    <li><a href="kapcsolat.html" class="nav-cta">Kapcsolat</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" id="hbg">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html" onclick="closeMenu()">Kezdőlap</a>
+  <a href="szolgaltatasok.html" onclick="closeMenu()">Szolgáltatások</a>
+  <a href="palyazatok.html" onclick="closeMenu()">Pályázatok</a>
+  <a href="kapcsolat.html" onclick="closeMenu()">Kapcsolat</a>
+</div>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  <div class="urgency-track">
+    <span>Lézerhegesztés felsőfokon</span>
+    <span>Forma lézerhegesztés</span>
+    <span>Szerszámacél · Alumínium · Titán · Bronz</span>
+    <span>63 HRC keménységig</span>
+    <span>Magyar gyártó · Gyors átfutás</span>
+    <span>Orvosi műszerek javítása</span>
+    <span>Hősokk nélküli technológia</span>
+    <span>Lézerhegesztés felsőfokon</span>
+    <span>Forma lézerhegesztés</span>
+    <span>Szerszámacél · Alumínium · Titán · Bronz</span>
+    <span>63 HRC keménységig</span>
+    <span>Magyar gyártó · Gyors átfutás</span>
+    <span>Orvosi műszerek javítása</span>
+    <span>Hősokk nélküli technológia</span>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-bg" id="kapcsolat">
+  <div class="s-label">Kapcsolat</div>
+  <div class="s-title">Írj vagy hívj –<br>gyorsan válaszolunk</div>
+  <div class="contact-grid fade">
+    <div class="contact-info">
+      <h3>Elérhetőségek</h3>
+      <div class="cline">
+        <div class="cline-icon">📞</div>
+        <div class="cline-text">
+          <strong>Telefon</strong>
+          <span><a href="tel:+36309587784">+36 30 958 7784</a></span>
+        </div>
+      </div>
+      <div class="cline">
+        <div class="cline-icon">✉</div>
+        <div class="cline-text">
+          <strong>Email</strong>
+          <span><a href="mailto:info@3dflasertech.hu">info@3dflasertech.hu</a></span>
+        </div>
+      </div>
+      <div class="cline">
+        <div class="cline-icon">f</div>
+        <div class="cline-text">
+          <strong>Facebook</strong>
+          <span><a href="https://facebook.com" target="_blank">3D.f Laser Tech</a></span>
+        </div>
+      </div>
+      <div class="cline">
+        <div class="cline-icon">◎</div>
+        <div class="cline-text">
+          <strong>Instagram</strong>
+          <span><a href="https://instagram.com" target="_blank">@3dflasertech</a></span>
+        </div>
+      </div>
+      <div class="ceg-adatok">
+        <h4>Céginformáció</h4>
+        <div class="ceg-row"><span>Cégnév</span><span>3D.f Laser Tech Kft.</span></div>
+        <div class="ceg-row"><span>Adószám</span><span>28831512-2-05</span></div>
+        <div class="ceg-row"><span>Cégjegyzék szám</span><span>05-09-033426</span></div>
+      </div>
+    </div>
+    <div>
+      <form onsubmit="submitForm(event)" id="contactForm">
+        <div class="fg2">
+          <div class="fg">
+            <label for="nev">Neved</label>
+            <input type="text" id="nev" placeholder="Kovács Gábor" required>
+          </div>
+          <div class="fg">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="gabor@ceg.hu" required>
+          </div>
+        </div>
+        <div class="fg">
+          <label for="tel">Telefonszám</label>
+          <input type="tel" id="tel" placeholder="+36 30 ...">
+        </div>
+        <div class="fg">
+          <label for="svc">Milyen munkára van szükséged?</label>
+          <select id="svc">
+            <option value="">Válassz...</option>
+            <option>Lézerhegesztés – alkatrész javítás</option>
+            <option>Forma lézerhegesztés</option>
+            <option>Fogaskerék / tengely felrakás</option>
+            <option>Orvosi műszer javítás / gyártás</option>
+            <option>Egyéb fémmegmunkálás</option>
+            <option>Árajánlat kérés</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>Fénykép / rajz feltöltése (opcionális)</label>
+          <div class="upload-zone" onclick="document.getElementById('file').click()" style="position:relative;">
+            <strong>📎 Kattints a feltöltéshez</strong>
+            <p>JPG, PNG, PDF – max 20 MB</p>
+            <button type="button" id="removeFileBtn" onclick="removeFile(event)" style="display:none; position:absolute; top:10px; right:10px; background:rgba(255,255,255,0.8); border:1px solid #ccc; border-radius:50%; width:24px; height:24px; cursor:pointer; font-weight:bold; color:#333; z-index:10; line-height:1;">✕</button>
+            <input type="file" id="file" accept=".jpg,.jpeg,.png,.pdf" style="display:none" onchange="showFile(this)">
+          </div>
+        </div>
+        <div class="fg">
+          <label for="uzenet">Üzenet</label>
+          <textarea id="uzenet" placeholder="Milyen alkatrészt, milyen anyagból, mire szeretné javítani? Ha tud, írja meg a méreteket, anyagminőséget és a határidőt is."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-form" id="submitBtn">Üzenet elküldése →</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">✅</div>
+        <h4>Üzenet elküldve!</h4>
+        <p>Köszönjük megkeresésed. Hamarosan felvesszük veled a kapcsolatot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">3D.f <em>Laser</em> Tech</div>
+      <p class="footer-tagline">Gyors segítség a szerszám gyártásban. Forma lézerhegesztés felsőfokon.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Menü</h5>
+      <a href="index.html">Kezdőlap</a>
+      <a href="szolgaltatasok.html">Szolgáltatások</a>
+      <a href="palyazatok.html">Pályázatok</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+    </div>
+    <div class="footer-col">
+      <h5>Elérhetőség</h5>
+      <a href="tel:+36309587784">+36 30 958 7784</a>
+      <a href="mailto:info@3dflasertech.hu">info@3dflasertech.hu</a>
+      <a href="gyik.html">GYIK</a>
+      <a href="palyazatok.html">Pályázatok</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 3D.f Laser Tech Kft. – Minden jog fenntartva.</span>
+    <span>Adószám: 28831512-2-05 · Cégjegyzék: 05-09-033426</span>
+  </div>
+</footer>
+
+<a href="#kapcsolat" class="scroll-top" id="scrollTop">↑</a>
+<script src="main.js"></script>
+</body>
+</html>

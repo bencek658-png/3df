@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elkészült munkák – 3D.f Laser Tech</title>
+<meta name="description" content="Lézerhegesztési referenciák: fröccsöntő forma javítás, fogaskerék felrakás, orvosi műszer javítás. 3D.f Laser Tech Kft.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-logo-box"><span>3D</span></div>
+    <span class="nav-brandname">3D.f <em>Laser</em> Tech</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Kezdőlap</a></li>
+    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+    <li><a href="munkak.html">Munkák</a></li>
+    <li><a href="palyazatok.html">Pályázatok</a></li>
+    <li><a href="kapcsolat.html" class="nav-cta">Kapcsolat</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" id="hbg">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html" onclick="closeMenu()">Kezdőlap</a>
+  <a href="szolgaltatasok.html" onclick="closeMenu()">Szolgáltatások</a>
+  <a href="munkak.html" onclick="closeMenu()">Munkák</a>
+  <a href="palyazatok.html" onclick="closeMenu()">Pályázatok</a>
+  <a href="kapcsolat.html" onclick="closeMenu()">Kapcsolat</a>
+</div>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  <div class="urgency-track">
+    <span>Lézerhegesztés felsőfokon</span>
+    <span>Forma lézerhegesztés</span>
+    <span>Szerszámacél · Alumínium · Titán · Bronz</span>
+    <span>63 HRC keménységig</span>
+    <span>Magyar gyártó · Gyors átfutás</span>
+    <span>Orvosi műszerek javítása</span>
+    <span>Hősokk nélküli technológia</span>
+    <span>Lézerhegesztés felsőfokon</span>
+    <span>Forma lézerhegesztés</span>
+    <span>Szerszámacél · Alumínium · Titán · Bronz</span>
+    <span>63 HRC keménységig</span>
+    <span>Magyar gyártó · Gyors átfutás</span>
+    <span>Orvosi műszerek javítása</span>
+    <span>Hősokk nélküli technológia</span>
+  </div>
+</div>
+
+<!-- GALLERY / MUNKÁK -->
+<section class="gallery-bg" id="munkak">
+  <div class="s-label">Referenciák</div>
+  <div class="s-title">Elkészült munkáink</div>
+  <p class="s-desc">Néhány példa az általunk elvégzett lézerhegesztési munkákból. Fröccsöntő szerszámoktól fogaskerekekig – minden anyagon, minden méretben.</p>
+
+  <div class="gallery-tabs">
+    <button class="gallery-tab active" onclick="filterGallery('all', this)">Összes</button>
+    <button class="gallery-tab" onclick="filterGallery('forma', this)">Forma hegesztés</button>
+    <button class="gallery-tab" onclick="filterGallery('alkatresz', this)">Alkatrész javítás</button>
+    <button class="gallery-tab" onclick="filterGallery('orvosi', this)">Orvosi</button>
+  </div>
+
+  <div class="gallery-grid fade" id="galleryGrid">
+    <div class="gallery-item gi-1" data-cat="forma">
+      <div class="gallery-item-inner">
+        <div style="width:80px;height:80px;border:2px solid rgba(27,201,160,0.3);border-radius:4px;display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 40 40"><rect x="5" y="5" width="30" height="30" rx="3" fill="none" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.5"/><path d="M12 20 Q20 10 28 20" fill="none" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.7"/><circle cx="20" cy="20" r="3" fill="#1bc9a0" opacity="0.5"/></svg>
+        </div>
+        <span style="font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase;">Fotó hamarosan</span>
+      </div>
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-caption">Fröccsöntő forma javítás</div>
+          <div class="gallery-sub">Szerszámacél · Precíziós feltöltés</div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item gi-2" data-cat="alkatresz">
+      <div class="gallery-item-inner">
+        <div style="width:60px;height:60px;border-radius:50%;border:2px solid rgba(27,201,160,0.3);display:flex;align-items:center;justify-content:center;">
+          <svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="12" fill="none" stroke="#1bc9a0" stroke-width="1" stroke-opacity="0.5" stroke-dasharray="3 4"/><circle cx="15" cy="15" r="5" fill="none" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.7"/></svg>
+        </div>
+        <span style="font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase;">Fotó hamarosan</span>
+      </div>
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-caption">Fogaskerék felrakás</div>
+          <div class="gallery-sub">Acél · Tengely hegesztés</div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item gi-3" data-cat="orvosi">
+      <div class="gallery-item-inner">
+        <div style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;">
+          <svg width="36" height="36" viewBox="0 0 36 36"><path d="M18 4 L18 32 M4 18 L32 18" stroke="#1bc9a0" stroke-width="2" stroke-opacity="0.5" stroke-linecap="round"/><circle cx="18" cy="18" r="6" fill="none" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.4"/></svg>
+        </div>
+        <span style="font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase;">Fotó hamarosan</span>
+      </div>
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-caption">Orvosi műszer javítás</div>
+          <div class="gallery-sub">Titán · Biokompatibilis</div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item gi-4" data-cat="forma">
+      <div class="gallery-item-inner">
+        <div style="width:60px;height:60px;border:2px solid rgba(27,201,160,0.3);display:flex;align-items:center;justify-content:center;">
+          <svg width="30" height="30" viewBox="0 0 30 30"><polygon points="15,3 27,9 27,21 15,27 3,21 3,9" fill="none" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.6"/></svg>
+        </div>
+        <span style="font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase;">Fotó hamarosan</span>
+      </div>
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-caption">Présszerszám felújítás</div>
+          <div class="gallery-sub">Szerszámacél · Él helyreállítás</div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item gi-5" data-cat="alkatresz">
+      <div class="gallery-item-inner">
+        <div style="width:60px;height:60px;display:flex;align-items:center;justify-content:center;">
+          <svg width="36" height="36" viewBox="0 0 36 36"><rect x="4" y="14" width="28" height="8" rx="2" fill="none" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.5"/><line x1="10" y1="14" x2="10" y2="6" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.4"/><line x1="18" y1="14" x2="18" y2="6" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.4"/><line x1="26" y1="14" x2="26" y2="6" stroke="#1bc9a0" stroke-width="1.5" stroke-opacity="0.4"/></svg>
+        </div>
+        <span style="font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase;">Fotó hamarosan</span>
+      </div>
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-caption">Kopott felület helyreállítás</div>
+          <div class="gallery-sub">Bronz · Csúszófelület</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-cta" style="margin-top:36px;">
+    <p style="font-size:13px;color:var(--gray-500);margin-bottom:20px;">Saját munkád fotóját is szívesen fogadjuk referenciaként.</p>
+    <a href="kapcsolat.html" class="btn-primary">Képet küldök →</a>
+  </div>
+</section>
+
+<!-- REVIEWS / VÉLEMÉNYEK -->
+<section class="reviews-bg">
+  <div class="s-label">Vélemények</div>
+  <div class="s-title">Amit az ügyfelek mondanak</div>
+  <div class="reviews-grid fade">
+    <div class="review-card">
+      <div class="review-badge">Igazolt ügyfél</div>
+      <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="review-text">Egy 63 HRC-s szerszámacél formát hoztunk be javításra – korábban három másik cégnél visszautasítottak. Náluk problémamentesen megcsinálták, a felület tökéletes lett.</p>
+      <div class="review-author">
+        <div class="review-avatar">KP</div>
+        <div>
+          <div class="review-name">Kovács Péter</div>
+          <div class="review-company">Precíziós Szerszámok Kft.</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-badge">Igazolt ügyfél</div>
+      <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="review-text">Titán orvosi eszköz lézerhegesztése volt a feladat – rendkívül precíz munka, a biokompatibilitási követelményeket maradéktalanul teljesítette. Ajánlom mindenkinek.</p>
+      <div class="review-author">
+        <div class="review-avatar">SZ</div>
+        <div>
+          <div class="review-name">Szabó Zoltán</div>
+          <div class="review-company">MedTech Solutions Zrt.</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-badge">Igazolt ügyfél</div>
+      <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="review-text">Gyors reagálás, pontos határidő, átlátható árazás. A fogaskereket aznap elvitték, másnap kész volt – és mintha gyárból jött volna ki. Nem keresünk más szolgáltatót.</p>
+      <div class="review-author">
+        <div class="review-avatar">NG</div>
+        <div>
+          <div class="review-name">Nagy Gábor</div>
+          <div class="review-company">Ipari Gépjavítás Bt.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">3D.f <em>Laser</em> Tech</div>
+      <p class="footer-tagline">Gyors segítség a szerszám gyártásban. Forma lézerhegesztés felsőfokon.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Menü</h5>
+      <a href="index.html">Kezdőlap</a>
+      <a href="szolgaltatasok.html">Szolgáltatások</a>
+      <a href="palyazatok.html">Pályázatok</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+    </div>
+    <div class="footer-col">
+      <h5>Elérhetőség</h5>
+      <a href="tel:+36309587784">+36 30 958 7784</a>
+      <a href="mailto:info@3dflasertech.hu">info@3dflasertech.hu</a>
+      <a href="munkak.html">Referenciák</a>
+      <a href="gyik.html">GYIK</a>
+      <a href="palyazatok.html">Pályázatok</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 3D.f Laser Tech Kft. – Minden jog fenntartva.</span>
+    <span>Adószám: 28831512-2-05 · Cégjegyzék: 05-09-033426</span>
+  </div>
+</footer>
+
+<a href="#munkak" class="scroll-top" id="scrollTop">↑</a>
+<script src="main.js"></script>
+</body>
+</html>
